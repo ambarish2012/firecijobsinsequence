@@ -12,23 +12,19 @@ jobs:
     type: runCI
     steps:
       - IN: repo-1_runCI
-      - IN: gitRepoResource2
-
+   
   - name: repo-3_runCI
     type: runCI
     steps:
       - IN: repo-2_runCI
-      - IN: gitRepoResource3
-
+   
   - name: repo-4_runCI
     type: runCI
     steps:
       - IN: repo-3_runCI
-      - IN: gitRepoResourc4
-
+   
   - name: repo-5_runCI
     type: runCI
     steps:
       - IN: repo-4_runCI
-      - IN: gitRepoResource5
-
+   

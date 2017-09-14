@@ -1,0 +1,30 @@
+resources:
+  - name:           gitRepoResource1
+    type:           gitRepo
+    integration:    github
+    pointer:
+      sourceName: ambarish2012/repo-1
+      
+  - name:           gitRepoResource2
+    type:           gitRepo
+    integration:    github
+    pointer:
+      sourceName: ambarish2012/repo-2
+
+  - name:           gitRepoResource3
+    type:           gitRepo
+    integration:    github
+    pointer:
+      sourceName: ambarish2012/repo-3
+
+  - name:           gitRepoResource4
+    type:           gitRepo
+    integration:    github
+    pointer:
+      sourceName: ambarish2012/repo-4
+
+  - name:           gitRepoResource5
+    type:           gitRepo
+    integration:    github
+    pointer:
+      sourceName: ambarish2012/repo-5

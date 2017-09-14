@@ -1,1 +1,30 @@
+jobs:
+  - name: repo-1_runCI
+    type: runCI
+    steps:
+      - IN: gitRepoResource1
+      - IN: gitRepoResource2
+      - IN: gitRepoResource3
+      - IN: gitRepoResource4
+      - IN: gitRepoResource5
+
+  - name: repo-2_runCI
+    type: runCI
+    steps:
+      - IN: repo-1_runCI
+
+  - name: repo-3_runCI
+    type: runCI
+    steps:
+      - IN: repo-2_runCI
+
+  - name: repo-4_runCI
+    type: runCI
+    steps:
+      - IN: repo-3_runCI
+
+  - name: repo-5_runCI
+    type: runCI
+    steps:
+      - IN: repo-4_runCI
 

@@ -8,26 +8,4 @@ jobs:
       - IN: gitRepoResource4
       - IN: gitRepoResource5
 
-  - name: repo-2_runCI
-    type: runCI
-    steps:
-      - IN: gitRepoResource2
-        switch: off
-   
-  - name: repo-3_runCI
-    type: runCI
-    steps:
-      - IN: gitRepoResource3
-        switch: off
-        
-  - name: repo-4_runCI
-    type: runCI
-    steps:
-      - IN: gitRepoResource4
-        switch: off
-        
-  - name: repo-5_runCI
-    type: runCI
-    steps:
-      - IN: gitRepoResource5
-        switch: off   
+  

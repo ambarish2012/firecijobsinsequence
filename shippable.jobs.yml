@@ -11,20 +11,23 @@ jobs:
   - name: repo-2_runCI
     type: runCI
     steps:
-      - IN: repo-1_runCI
+      - IN: gitRepoResource2
+        switch: off
    
   - name: repo-3_runCI
     type: runCI
     steps:
-      - IN: repo-2_runCI
-   
+      - IN: gitRepoResource3
+        switch: off
+        
   - name: repo-4_runCI
     type: runCI
     steps:
-      - IN: repo-3_runCI
-   
+      - IN: gitRepoResource4
+        switch: off
+        
   - name: repo-5_runCI
     type: runCI
     steps:
-      - IN: repo-4_runCI
-   
+      - IN: gitRepoResource5
+        switch: off   
